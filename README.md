@@ -6,11 +6,11 @@ Score: (15 points)
 
 
 **Name:**
-AXEL O. BALITAAN
+AXEL O. BALITAAN</br>
 **Section:**
-CMSC 100 UV4L
+CMSC 100 UV4L</br>
 **Student number:**
-2022-05153
+2022-05153</br>
 
 ## Code Description
 
