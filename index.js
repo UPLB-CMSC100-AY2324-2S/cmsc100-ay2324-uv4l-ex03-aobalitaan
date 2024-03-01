@@ -45,15 +45,15 @@ function validatePassword(passw1, passw2)   // Function for validating password
         return false;
     }
 
-    if (!hasLower(passw1))  // If string doesn't have a lowercase character
-    {
-        console.log("Password should have a lowercase character!");
-        return false;
-    }
-
     if (!hasUpper(passw1)) // If string doesn't have an uppercase character
     {
         console.log("Password should have an uppercase character!");
+        return false;
+    }
+
+    if (!hasLower(passw1))  // If string doesn't have a lowercase character
+    {
+        console.log("Password should have a lowercase character!");
         return false;
     }
     
@@ -85,7 +85,7 @@ function storePassword(username, passw1, passw2)
     }
 
     console.log(credentials);
-    
+
     return credentials;
 }
 
