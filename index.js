@@ -17,12 +17,12 @@ function hasNumber(str)
 
 function hasLower(str)
 {
-
+    return (!(str == str.toUpperCase()));
 }
 
 function hasUpper(str)
 {
-
+    return (!(str == str.toLowerCase()));
 }
 
 function validatePassword(passw1, passw2)
