@@ -14,7 +14,7 @@ CMSC 100 UV4L</br>
 
 ## Code Description
 
-A password validation algorithm that checks for the following in order: 
+### A password validation algorithm that checks for the following in order: 
     - Password 1 and Password 2 matching
     - Password is at least 8 characters
     - Password has a number
