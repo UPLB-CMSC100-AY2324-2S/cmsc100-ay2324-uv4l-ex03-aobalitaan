@@ -75,7 +75,15 @@ function reverseStr(str)
 
 function storePassword(username, passw1, passw2)
 {
+    var credentials =
+    {
+        name: username,
+        password: passw1,
+        newpassword: validatePassword(passw1, passw2) ? reverseStr(passw1) : passw1
+    }
 
+    console.log(credentials);
+    return credentials;
 }
 
 // validatePassword("helloworld", "hello")     // returns false
@@ -84,4 +92,5 @@ function storePassword(username, passw1, passw2)
 // validatePassword("Hello1234", "Hello1234")  // returns true
 // validatePassword("HELLO1234", "HELLO1234")  // returns false
 
-// storePassword("John", "Pass1234", "Pass1234") // returns {name: "John", newpassword:"4321ssaP"}
+storePassword("John", "Pass1234", "Pass1234") // returns {name: "John", newpassword:"4321ssaP"}
+storePassword("John", "Pass123", "Pass12345") // returns {name: "John", newpassword:"Pass123"}
