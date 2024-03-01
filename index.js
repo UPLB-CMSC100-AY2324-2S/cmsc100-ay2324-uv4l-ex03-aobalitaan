@@ -63,7 +63,14 @@ function validatePassword(passw1, passw2)
 
 function reverseStr(str)
 {
+    var rev_str = "";
 
+    for (var i = (str.length - 1); i >= 0; i--)
+    {
+        rev_str = rev_str + str[i];
+    }
+
+    return rev_str;
 }
 
 function storePassword(username, passw1, passw2)
