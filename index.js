@@ -5,7 +5,14 @@ function stringEqual(str1, str2)
 
 function hasNumber(str)
 {
-
+    for (var i = 0; i < str.length; i++)
+    {
+        if (str[i].toUpperCase() == str[i].toLowerCase())
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 function hasLower(str)
