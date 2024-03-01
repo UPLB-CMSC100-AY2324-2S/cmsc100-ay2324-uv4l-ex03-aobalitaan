@@ -85,6 +85,7 @@ function storePassword(username, passw1, passw2)
     }
 
     console.log(credentials);
+    
     return credentials;
 }
 
